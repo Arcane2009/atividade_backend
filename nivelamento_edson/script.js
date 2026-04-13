@@ -95,3 +95,40 @@ for(i = 0; i <= 10; i ++){
         i = 11
     }
 }
+
+//20. Crie uma função que exibe uma mensagem.
+function mensagem(){
+    console.log("Oiiii")
+}
+
+mensagem()
+
+//21. Crie uma função que multiplica dois números
+function multiplica(){
+    console.log(10*3)
+}
+
+multiplica()
+
+//22. Crie uma função que verifica se é par ou impar
+function verificar(num){
+    return num % 2 === 0 ? "par" : "impar";
+}
+
+console.log(verificar(10))
+
+//23. Crie uma função que retorne o dobro
+function dobro(dobro){
+    return dobro * 2
+}
+console.log(dobro(2))
+
+//24. Crie uam função que some elementos de um array
+function somaArray(arr){
+    total = 0;
+    for(let i = 0; i<arr.length; i++){
+        total += arr[i];
+    }
+    return total;
+}
+console.log(somaArray([2,5,6]))
