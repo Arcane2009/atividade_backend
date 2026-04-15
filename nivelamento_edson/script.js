@@ -111,11 +111,11 @@ function multiplica(){
 multiplica()
 
 //22. Crie uma função que verifica se é par ou impar
-function verificar(num){
+function verpar(num){
     return num % 2 === 0 ? "par" : "impar";
 }
 
-console.log(verificar(10))
+console.log(verpar(10))
 
 //23. Crie uma função que retorne o dobro
 function dobro(dobro){
@@ -132,3 +132,30 @@ function somaArray(arr){
     return total;
 }
 console.log(somaArray([2,5,6]))
+
+//ATIVIDADES IF//
+//11. Verifique se o número 15 é positivo e exiba uma mensagem
+let numero = 15;
+if(numero > 0){
+    console.log(`${numero} é positivo`)
+}
+//12. Verifique se uma pessoa com 17 é maior de idade e exiba uma mensagem
+let idade = 15;
+if(idade > 17){
+    console.log('Você é maior de idade')
+} else{
+    console.log('Você é menor de idade')
+}
+
+///ATIVIDADES ARRAY//
+//31. Crie um array com os números 10,20,30,40 e exiba todos
+lista1 = [10,20,30,40]
+console.log(lista1)
+//32. Crie um array com 5 frutas e exiba a primeira fruta
+lista2 = ['amora','banana','carambola','maça']
+console.log(lista2[0])
+//33. Adicione o número 50 no final do array [10,20,30]
+lista3 = [10,20,30]
+lista3.push(50)
+console.log(lista3)
+//34. Remova o último elemento do array [1,2,3]
