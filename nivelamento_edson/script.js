@@ -154,8 +154,29 @@ console.log(lista1)
 //32. Crie um array com 5 frutas e exiba a primeira fruta
 lista2 = ['amora','banana','carambola','maça']
 console.log(lista2[0])
-//33. Adicione o número 50 no final do array [10,20,30]
-lista3 = [10,20,30]
+//33. Adicione o número 50 no final do array [10,20,30,40]
+lista3 = [10,20,30,40]
 lista3.push(50)
 console.log(lista3)
-//34. Remova o último elemento do array [1,2,3]
+//34. Remova o último elemento do array [1,2,3,4,5]
+lista4 = [1,2,3,4,5]
+lista4.pop()
+console.log(lista4)
+//35. Exiba quantos elementos tem o array [5,10,15,20]
+lista5 = [5,10,15,20]
+quantos = 0
+for(let i = 0; i<lista5.length; i++){
+    quantos += 1
+}
+console.log(`lista5 tem ${quantos} elementos`)
+//36. Some todos os números do array [2,4,6,8]
+lista6 = [2,4,6,8]
+function somaArray(lista6){
+    total = 0;
+    for(let i = 0; i<lista6.length; i++){
+        total += lista[i];
+    }
+    return total;
+}
+console.log(somaArray(lista6))
+//37. Multiplique cada elemento do array [1, 2, 3, 4] por 2
