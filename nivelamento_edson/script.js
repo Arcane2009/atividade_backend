@@ -28,8 +28,8 @@ if(x > y){
 };
 
 //8. Crie duas variaveis e exiba a concatenação
-banana = "Aa";
-maca = "Bb";
+let banana = "Aa";
+let maca = "Bb";
 console.log(banana + maca);
 
 //9. Descubra o tipo de uma variável
@@ -139,38 +139,86 @@ let numero = 15;
 if(numero > 0){
     console.log(`${numero} é positivo`)
 }
+
 //12. Verifique se uma pessoa com 17 é maior de idade e exiba uma mensagem
-let idade = 15;
-if(idade > 17){
+let idadeif1 = 15;
+if(idadeif1 > 17){
     console.log('Você é maior de idade')
 } else{
     console.log('Você é menor de idade')
 }
 
+// 13: Verifique se o número 7 é par ou ímpar
+let numif = 7
+if(numif > 0){
+    console.log("é par")
+}
+
+// 14: Verifique se a nota 7.5 é suficiente para aprovação (média 6)
+let notaif = 7.5;
+if(notaif >=6){
+console.log("Aprovado")} else {console.log("Reprovado")}
+
+// 15: Verifique se o número 8 é maior que 10
+let numif2 =8;
+if(numif2 >=10){
+console.log(`${num} é maior do 10`)}else{
+    console.log("menor");
+};
+
+// 16: Verifique se o número 0 é igual a zero
+let numif3 =0
+if(numif3 === 0){
+    console.log("Igual a zero")
+}
+
+// 17: Compare os números 10 e 20 e diga qual é o maior
+let numif4 = 10
+let numif5 = 20
+if(numif4 > numif5){
+    console.log("numif4 é maior que numif5")
+} else {
+    console.log("numif5 é maior que numif4")
+}
+
+// 18: Verifique se uma pessoa de 16 anos pode votar (16+ pode votar)
+let idadeif2 = 16;
+if(idadeif2 >= 16){
+    console.log('Você pode votar')
+} else{
+    console.log('Você não pode votar')
+}
+
+// 19: Verifique se o número 25 está entre 10 e 30
+let numif6 = 25
+if(numif6 > 10 & numif6 < 30){
+    console.log("O número 25 está entre 10 e 30")
+}
+
 ///ATIVIDADES ARRAY//
 //31. Crie um array com os números 10,20,30,40 e exiba todos
-lista1 = [10,20,30,40]
+let lista1 = [10,20,30,40]
 console.log(lista1)
 //32. Crie um array com 5 frutas e exiba a primeira fruta
-lista2 = ['amora','banana','carambola','maça']
+let lista2 = ['amora','banana','carambola','maça']
 console.log(lista2[0])
 //33. Adicione o número 50 no final do array [10,20,30,40]
-lista3 = [10,20,30,40]
+let lista3 = [10,20,30,40]
 lista3.push(50)
 console.log(lista3)
 //34. Remova o último elemento do array [1,2,3,4,5]
-lista4 = [1,2,3,4,5]
+let lista4 = [1,2,3,4,5]
 lista4.pop()
 console.log(lista4)
 //35. Exiba quantos elementos tem o array [5,10,15,20]
-lista5 = [5,10,15,20]
+let lista5 = [5,10,15,20]
 quantos = 0
 for(let i = 0; i<lista5.length; i++){
     quantos += 1
 }
 console.log(`lista5 tem ${quantos} elementos`)
 //36. Some todos os números do array [2,4,6,8]
-lista6 = [2,4,6,8]
+let lista6 = [2,4,6,8]
 function somaArray(lista6){
     total = 0;
     for(let i = 0; i<lista6.length; i++){
@@ -179,4 +227,77 @@ function somaArray(lista6){
     return total;
 }
 console.log(somaArray(lista6))
-//37. Multiplique cada elemento do array [1, 2, 3, 4] por 2
+
+//Ternário//
+//1. Verifique se um número é positivo ou não
+let numter = 5;
+let resultado = numter > 0 ? "Positivo" : "Negativo";
+console.log(`\n O número é ${resultado}`)
+
+//2.Verifique se uma pessoa pode votar. Se sim, retorne "Pode votar". Se não, "Não pode votar"
+let idadevoto = 17;
+let votoper = idadevoto >= 16 ? "pode votar" : "não pode votar";
+console.log(`\n Você ${votoper}`)
+
+//3. Descubra se um número é par ou ímpar. Se par, retorne "par", se ímpar retorne "ímpar"
+let parter = 17;
+let resulpar = parter%2 === 0 ? "par" : "ímpar";
+console.log(`\n O número é ${resulpar}`)
+
+//4. Crie uma variação de nível de acesso. Se for "admin" retorne acesso total caso contrário "acesso restrito"
+let acesso = "Admin";
+let nivelacess = acesso === "Admin" ? "total" : "restrito";
+console.log(`\n O seu nível de acesso é ${nivelacess}`)
+
+//5. Aplique desconto em um produto. Se preço > 100, aplique 10% de desconto (multiplicar por 0.9). Caso contrário, mantenha o preço original
+let preco = 20
+let precodesconto = preco >100 ?  preco*0.9 : preco;
+console.log(`\n O seu produto vai custar ${precodesconto}`)
+
+/*EXERCÍCIO 6 (Médio-Fácil)
+Classifique a situação do aluno baseado na média.
+- Se nota >= 7, retorne "Aprovado"
+- Caso contrário, "Reprovado"*/
+let nota = 20
+let media = nota >= 7 ?  "aprovado" : "reprovado";
+console.log(`\n O aluno está ${media}`)
+
+/*EXERCÍCIO 7 (Médio)
+Verifique se um número é par E maior que 10.
+- Se sim, retorne "Atende critérios"
+- Se não, "Não atende"*/
+
+let par10 = 20
+let maiorpar10 = par10%2 === 0 & par10 > 10 ?  "atende aos critérios" : "não atende aos critérios";
+console.log(`\n O número ${maiorpar10}`)
+
+/*EXERCÍCIO 8 (Médio)
+Classifique o número em positivo, negativo ou zero.
+- Se > 0: "Positivo"
+- Se < 0: "Negativo"
+- Se = 0: "Zero"*/
+
+let posinum = 20
+let resulposinum = posinum > 0 ? "positivo" : posinum < 0 ? "negativo" : "zero";
+console.log(`\n A classificação do número é ${resulposinum}`)
+
+/*EXERCÍCIO 9 (Médio)
+Simule um login simples.
+- Se usuario for "admin" E senha for "123", retorne "Login OK"
+- Caso contrário, "Falha no login"*/
+
+let acesso2 = "admin"
+let senhaacess2 = "123"
+let login = acesso2 === "admin" & senhaacess2 === "123" ?  "Login OK" : "Falha no login";
+console.log(`\n ${login}`)
+
+/*EXERCÍCIO 10 (Médio)
+Classifique a pessoa por idade:
+- Menor que 12: "Criança"
+- Entre 12 e 17: "Adolescente"
+- Entre 18 e 59: "Adulto"
+- 60 ou mais: "Idoso"*/
+
+let idade2 = 20
+let idadeclass = idade2 < 12 ? "criança" : idade2 >= 12 & idade2 <= 17 ? "adolescente" : idade2 >= 18 & idade2 <= 59 ? "adulto" : "idoso";
+console.log(`\n A classificação da idade é ${idadeclass}`)
