@@ -227,7 +227,93 @@ function somaArray(lista6){
     return total;
 }
 console.log(somaArray(lista6))
+// 37: Multiplique cada elemento do array [1, 2, 3, 4] por 2
+console.log("\n ====Multiplicar por 2====")
+let lista7 = [1,2,3,4]
+let multLista7 = []
+for(let i = 0; i < lista7.length; i++){
+    multLista7.push(lista7[i] * 2)
+}
+console.log(multLista7)
+// 38: Verifique se a fruta "laranja" existe no array ["maçã", "banana", "uva"]
+let lista8 = ["maçã", "banana", "uva"]
+for(let i = 0; i < lista8.length; i++){
+    
+}
+// 39: Exiba um por um os elementos do array ["azul", "verde", "amarelo"]
 
+// 40: Exiba o último elemento do array [100, 200, 300, 400, 500]
+
+// ==================== ATIVIDADES COM MATRIZ ====================
+
+// 41: Crie uma matriz 2x2 com os números 1, 2 na primeira linha e 3, 4 na segunda
+
+// 42: Exiba o elemento da linha 1, coluna 2 da matriz [[5, 6], [7, 8]]
+
+// 43: Exiba todos os elementos da matriz [[1, 2, 3], [4, 5, 6]]
+
+// 44: Some todos os números da matriz [[2, 4], [6, 8]]
+
+// 45: Crie uma matriz 3x3 com números de 1 a 9
+
+// 46: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
+
+// 47: Altere o elemento da linha 0, coluna 1 da matriz [[1,2],[3,4]] para 10
+
+// 48: Exiba apenas a primeira linha da matriz [[10,20],[30,40],[50,60]]
+
+// 49: Exiba apenas os elementos da primeira coluna da matriz [[1,2],[3,4],[5,6]]
+
+// 50: Multiplique todos os elementos da matriz [[1,2],[3,4]] por 2
+
+// ==================== ATIVIDADES COM OBJETOS ====================
+
+// 51: Crie um objeto pessoa com nome "Ana" e idade 25
+let Ana = {
+    nome: "Ana",
+    idade: 25
+}
+// 52: Acesse e exiba o nome do objeto {nome: "Carlos", cidade: "São Paulo"}
+let carlos = {
+    nome: "Carlos",
+    cidade: "São Paulo"
+}
+console.log(carlos)
+// 53: Adicione a propriedade "curso" ao objeto {nome: "Maria", idade: 20}
+let maria = {
+    nome: "Maria", 
+    idade: 20
+}
+maria.curso = "História"
+console.log(maria)
+// 54: Altere a idade do objeto {nome: "João", idade: 18} para 19
+let joao = {nome: "João", idade: 18}
+joao.idade = 19
+console.log(joao)
+// 55: Remova a propriedade "telefone" do objeto {nome: "Pedro", telefone: "99999-9999"}
+let pedro = {nome: "Pedro", telefone: "99999-9999"}
+delete pedro.telefone
+console.log(pedro)
+// 56: Exiba todas as propriedades do objeto {marca: "Nike", tamanho: 42, cor: "preto"}
+let tenis = {marca: "Nike", tamanho: 42, cor: "preto"}
+console.log(tenis)
+// 57: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
+let rex = {latir: ""}
+rex.latir = "Au au!"
+console.log(rex)
+// 58: Crie um objeto aluno com nome "Lucas" e notas [8, 7, 9]
+let alunoLucas = {nome: "Lucas", notas: [8, 7, 9]}
+console.log(alunoLucas)
+// 59: Crie um objeto carro com marca "Fiat" e um objeto motor com potencia "1.0"
+let carroFiat = {marca: "Fiat"}
+let motorFiat = {potencia: 1.0}
+console.log(carroFiat, motorFiat)
+// 60: Crie um array com 3 objetos de produtos (nome e preço) e exiba todos
+let produto1 = {nome: "Laranja", preco: 3.55}
+let produto2 = {nome: "Salgadinho", preco: 13.60}
+let produto3 = {nome: "Refri", preco: 8.90}
+let produtosObj = [produto1, produto2, produto3]
+console.log(produtosObj)
 //Ternário//
 //1. Verifique se um número é positivo ou não
 let numter = 5;
