@@ -238,10 +238,15 @@ console.log(multLista7)
 // 38: Verifique se a fruta "laranja" existe no array ["maçã", "banana", "uva"]
 let lista8 = ["maçã", "banana", "uva"]
 for(let i = 0; i < lista8.length; i++){
-    
+    if(lista8[i] == "laranja"){
+        console.log("achou\n")
+    } else{
+        console.log("não achou\n")
+    }
 }
 // 39: Exiba um por um os elementos do array ["azul", "verde", "amarelo"]
-
+let lista9 = ["azul", "verde", "amarelo"]
+for (let j )
 // 40: Exiba o último elemento do array [100, 200, 300, 400, 500]
 
 // ==================== ATIVIDADES COM MATRIZ ====================
