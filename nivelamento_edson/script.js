@@ -246,30 +246,100 @@ for(let i = 0; i < lista8.length; i++){
 }
 // 39: Exiba um por um os elementos do array ["azul", "verde", "amarelo"]
 let lista9 = ["azul", "verde", "amarelo"]
-for (let j )
+for (let i = 0; i < lista9.length; i++) {
+    console.log(lista9[i]);
+}
 // 40: Exiba o último elemento do array [100, 200, 300, 400, 500]
-
+let lista10 = [100, 200, 300, 400, 500]
+console.log(lista10[4])
 // ==================== ATIVIDADES COM MATRIZ ====================
 
 // 41: Crie uma matriz 2x2 com os números 1, 2 na primeira linha e 3, 4 na segunda
-
+let matriz1 = [
+    [1,2],
+    [3,4]
+]
+console.log(matriz1)
 // 42: Exiba o elemento da linha 1, coluna 2 da matriz [[5, 6], [7, 8]]
-
+let matriz2 = [
+    [5, 6], 
+    [7, 8]
+]
+console.log(matriz2[0][1])
 // 43: Exiba todos os elementos da matriz [[1, 2, 3], [4, 5, 6]]
-
+let matriz3 = [
+    [1, 2, 3], 
+    [4, 5, 6]
+]
+for (let i = 0; i < matriz3.length; i++) {
+    console.log(matriz3[i]);
+}
 // 44: Some todos os números da matriz [[2, 4], [6, 8]]
-
+let matriz4 = [
+    [2, 4], 
+    [6, 8]
+]
+somaMatriz = 0
+for (let i = 0; i < matriz4.length; i++) {
+    for(let j = 0; j < matriz4[i].length; j++){
+        somaMatriz = somaMatriz + matriz4[i][j]
+    }
+}
+console.log(somaMatriz)
 // 45: Crie uma matriz 3x3 com números de 1 a 9
-
+let matriz5 = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+console.log(matriz5)
 // 46: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
-
+let matriz6 = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+for (let i = 0; i < matriz6.length; i++) {
+    console.log(matriz6[i][i]);
+}
 // 47: Altere o elemento da linha 0, coluna 1 da matriz [[1,2],[3,4]] para 10
-
+let matriz7 = [
+    [1,2],
+    [3,4]
+]
+matriz7[0][1] = 10
+console.log(matriz7)
 // 48: Exiba apenas a primeira linha da matriz [[10,20],[30,40],[50,60]]
+let matriz8 = [
+    [10,20],
+    [30,40],
+    [50,60]
+]
+for( i = 0; i < 2; i ++){
+    console.log(matriz8[0][i])
+}
 
 // 49: Exiba apenas os elementos da primeira coluna da matriz [[1,2],[3,4],[5,6]]
-
+let matriz9 = [
+    [10,20],
+    [30,40],
+    [50,60]
+]
+for( i = 0; i < 3; i ++){
+    console.log(matriz9[i][0])
+}
 // 50: Multiplique todos os elementos da matriz [[1,2],[3,4]] por 2
+let matriz10 = [
+    [1,2],
+    [3,4]
+]
+multMatriz = 0
+for (let i = 0; i < matriz10.length; i++) {
+    for(let j = 0; j < matriz10[i].length; j++){
+        multMatriz = 2 * matriz10[i][j]
+        console.log(multMatriz)
+    }
+}
 
 // ==================== ATIVIDADES COM OBJETOS ====================
 
@@ -277,13 +347,13 @@ for (let j )
 let Ana = {
     nome: "Ana",
     idade: 25
-}
+};
 // 52: Acesse e exiba o nome do objeto {nome: "Carlos", cidade: "São Paulo"}
 let carlos = {
     nome: "Carlos",
     cidade: "São Paulo"
-}
-console.log(carlos)
+};
+console.log(carlos);
 // 53: Adicione a propriedade "curso" ao objeto {nome: "Maria", idade: 20}
 let maria = {
     nome: "Maria", 
