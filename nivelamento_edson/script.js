@@ -133,6 +133,53 @@ function somaArray(arr){
 }
 console.log(somaArray([2,5,6]))
 
+// ==================== ATIVIDADES COM FOR ====================//
+
+// 1: Exiba os números de 1 a 10 usando for
+for(let i=1; i<=10; i++){
+    console.log(i);}
+
+// 2: Exiba os números de 10 até 1 em ordem decrescente
+for(let i=10; i>=1; i--){
+    console.log(i);}
+        
+// 3: Exiba todos os números pares de 2 a 20
+console.log("\n==== Números pares até 20 ====");
+for(let i=2; i<=20; i= i + 2){
+console.log(i);}
+        
+// 4: Exiba a tabuada do número 5 (5x1 até 5x10);
+console.log("\n=== Tabuada do 5 ====");
+for(let i=1; i<=10; i++){
+console.log(`5 x ${i} = ${5 * i}`);}
+        
+// 5: Calcule e exiba a soma dos números de 1 até 50
+console.log("\n=== Soma de 1 a 50 =====");
+let soma = 0;
+for(let i =1; i<=50; i++){
+soma = soma + i;}
+console.log(`A soma é: ${soma}`);
+        
+// 6: Conte de 1 até o número 8 (use for);
+for(let i=1; i<=8; i++){
+    console.log(i);}
+        
+// 7: Exiba todos os números ímpares de 1 a 15
+for(let i= 1; i<=15; i= i +2){
+    console.log(i);}
+
+// 8: Exiba o resultado da multiplicação de 1 a 10 por 2
+for(let i=1; i<=10; i++){
+    console.log(`${i} x 2 ${i*2}`);}
+
+// 9: Exiba os números de 5 em 5, de 5 até 50
+for(let i=5; i<=50; i = i+ 5){
+    console.log(i);}
+
+// 10: Calcule e exiba o quadrado dos números de 1 a 10
+for(let i =1; i<=10; i++){
+    console.log(`${i}² = ${i*i}`);}
+    
 //ATIVIDADES IF//
 //11. Verifique se o número 15 é positivo e exiba uma mensagem
 let numero = 15;
@@ -195,7 +242,57 @@ if(numif6 > 10 & numif6 < 30){
     console.log("O número 25 está entre 10 e 30")
 }
 
+// 20: Verifique se "sábado" é dia útil (segunda a sexta)
+let diaIf = "sábado"
+if(diaIf === "sábado" || diaIf === "domingo"){
+    console.log(`${diaIf} não é dia útil`)
+}
+
+// ==================== ATIVIDADES COM FUNÇÕES ====================
+
+// 21: Crie uma função que exiba "Olá, mundo!" quando for chamada
+function func1(){
+    return console.log("Olá, mundo!");
+}
+func1()
+// 22: Crie uma função que receba um nome e exiba "Olá, [nome]"
+nomeFunc = "Paulo"
+function func2(){
+    return console.log(`Olá, ${nomeFunc}!`);
+}
+func2(nomeFunc)
+// 23: Crie uma função que receba dois números e retorne a soma
+
+// 24: Crie uma função que receba um número e retorne o dobro
+function dobro(n){
+    return n * 2;
+}
+console.log(dobro(5))
+
+// 25: Crie uma função que receba um número e diga se ele é par
+function verificar(num){
+    return num % 2 === 0 ? "par" : "impar";
+}
+console.log(verificar(10))
+
+// 26: Crie uma função que receba duas notas e retorne a média
+function mediaFunc(a,b){
+    return (a + b) / 2;
+}
+console.log(mediaFunc(5,2))
+// 27: Crie uma função que receba um número e retorne ele ao quadrado
+function quadraFunc(c){
+    return c * c;
+}
+console.log(quadraFunc(5))
+// 28: Crie uma função que converta Celsius para Fahrenheit
+
+// 29: Crie uma função que receba três números e retorne a multiplicação
+
+// 30: Crie uma função que receba um número e retorne o sucessor dele
+
 ///ATIVIDADES ARRAY//
+
 //31. Crie um array com os números 10,20,30,40 e exiba todos
 let lista1 = [10,20,30,40]
 console.log(lista1)
@@ -252,6 +349,7 @@ for (let i = 0; i < lista9.length; i++) {
 // 40: Exiba o último elemento do array [100, 200, 300, 400, 500]
 let lista10 = [100, 200, 300, 400, 500]
 console.log(lista10[4])
+
 // ==================== ATIVIDADES COM MATRIZ ====================
 
 // 41: Crie uma matriz 2x2 com os números 1, 2 na primeira linha e 3, 4 na segunda
@@ -373,9 +471,12 @@ console.log(pedro)
 let tenis = {marca: "Nike", tamanho: 42, cor: "preto"}
 console.log(tenis)
 // 57: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
-let rex = {latir: ""}
-rex.latir = "Au au!"
-console.log(rex)
+let rex = {
+    latir: function(){
+        console.log("Au au!")
+    }
+}
+rex.latir()
 // 58: Crie um objeto aluno com nome "Lucas" e notas [8, 7, 9]
 let alunoLucas = {nome: "Lucas", notas: [8, 7, 9]}
 console.log(alunoLucas)
@@ -389,6 +490,7 @@ let produto2 = {nome: "Salgadinho", preco: 13.60}
 let produto3 = {nome: "Refri", preco: 8.90}
 let produtosObj = [produto1, produto2, produto3]
 console.log(produtosObj)
+
 //Ternário//
 //1. Verifique se um número é positivo ou não
 let numter = 5;
