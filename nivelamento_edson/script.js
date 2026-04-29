@@ -564,3 +564,18 @@ Classifique a pessoa por idade:
 let idade2 = 20
 let idadeclass = idade2 < 12 ? "criança" : idade2 >= 12 & idade2 <= 17 ? "adolescente" : idade2 >= 18 & idade2 <= 59 ? "adulto" : "idoso";
 console.log(`\n A classificação da idade é ${idadeclass}`)
+
+// Exercícios ForEach //
+console.log("==Exercícis ForEach==")
+let numFE = [1,2,3,4]
+console.log("Usando for")
+for(let i = 0; i < numFE.length; i ++){
+    console.log(numFE[i]);
+}
+console.log("Usando foreach")
+numFE.forEach(function(n){
+    console.log(n)
+})
+
+console.log("ForEach Arrow modo seta")
+numFE.forEach(n => console.log(n))
