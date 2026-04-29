@@ -579,3 +579,22 @@ numFE.forEach(function(n){
 
 console.log("ForEach Arrow modo seta")
 numFE.forEach(n => console.log(n))
+
+//Mostre todos os valores do terminal:
+//dados do array:
+//let frutas["Maçã","Banana","Uva","Abacate"]
+//utilizar forEach função anonoma e função arrow
+let frutasFE = ["Maçã","Banana","Uva","Abacate"]
+frutasFE.forEach(function(n){
+    console.log(n)
+})
+
+frutasFE.forEach(n => console.log(n))
+
+//Some todos os valores e mostre os resulado preços = [10,30,50,60]
+let precosFE = [10,30,50,60]
+somaprecoFE = 0
+precosFE.forEach(function(precosFE){
+    somaprecoFE += precosFE
+})
+console.log(somaprecoFE)
